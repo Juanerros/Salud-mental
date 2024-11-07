@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="views/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="views/imgs/logo.png" alt="logo" title="Inicio">
+            <h2 class="titulo">Salud Mental</h2>
+        </a>
+
+        <button id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <script>
+            document.querySelector('#btn-menu').addEventListener('click', () =>
+                document.querySelector('.menu').classList.toggle('desplegado')
+            );
+        </script>
+
+        <div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Información</a>
+                <a href="views/pages/galeria.html">Ayudas</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contactos</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Información</a>
+        <a href="views/pages/galeria.html">Ayudas</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Contactos</a>
+    </nav>
+
+    <main>
+
+        <section class="entrar">
+            <h2>La importancia de la salud mental</h2>
+            <img src="views/imgs/gato.jpeg" alt="imagen">
+        </section>
+
+        <p class="dato">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, reiciendis? Eaque nisi doloremque
+            accusantium consequuntur amet itaque! Amet nam repellat veniam rerum, dicta eaque a reprehenderit enim,
+            voluptates iste culpa!
+        </p>
+        <p class="parrafo">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veritatis, nulla fugit saepe nam quidem
+            animi! Ipsa doloremque odio incidunt reiciendis eaque explicabo quos ea nihil et quibusdam. Nobis, alias.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam numquam, sapiente quod ullam eveniet debitis
+            illum sunt quis nisi laudantium consequuntur? Veritatis tempore labore molestiae animi non dicta quaerat
+            consequatur!
+        </p>
+    </main>
+
+    <footer>
+        <div class="datos">
+
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quis labore fugit illum molestias
+                provident
+                explicabo dignissimos voluptates tempore. Explicabo numquam nam commodi provident error eum earum
+                sapiente
+                dolores ipsam?
+            </div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quis labore fugit illum molestias
+                provident
+                explicabo dignissimos voluptates tempore. Explicabo numquam nam commodi provident error eum earum
+                sapiente
+                dolores ipsam?
+            </div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quis labore fugit illum molestias
+                provident
+                explicabo dignissimos voluptates tempore. Explicabo numquam nam commodi provident error eum earum
+                sapiente
+                dolores ipsam?
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('#btn-menu').addEventListener('click', () => {
+            document.querySelector('.desplegado').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

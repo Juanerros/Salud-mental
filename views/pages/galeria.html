@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="logo" title="Inicio">
+            <img src="../imgs/logo.png" alt="logo">
+            <h2 class="titulo">Salud Mental</h2>
+        </a>
+
+        <button id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <script>
+            document.querySelector('#btn-menu').addEventListener('click', () =>
+                document.querySelector('.menu').classList.toggle('desplegado')
+            );
+        </script>
+
+        <div>
+            <nav class="menu">
+                <a href="../../index.html">Inicio</a>
+                <a href="#">Información</a>
+                <a href="#">Ayudas</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contactos</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Información</a>
+        <a href="#">Ayudas</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Contactos</a>
+    </nav>
+
+    <main>
+        <div class="galeria">
+            <img src="../imgs/gato.jpeg" alt="img1">
+            <img src="../imgs/gato.jpeg" alt="img2">
+            <img src="../imgs/gato.jpeg" alt="img3">
+            <img src="../imgs/gato.jpeg" alt="img4">
+            <img src="../imgs/gato.jpeg" alt="img5">
+            <img src="../imgs/gato.jpeg" alt="img6">
+            <img src="../imgs/gato.jpeg" alt="img7">
+            <img src="../imgs/gato.jpeg" alt="img8">
+            <img src="../imgs/gato.jpeg" alt="img9">
+            <img src="../imgs/gato.jpeg" alt="img10">
+        </div>
+    </main>
+
+    <footer>
+        <div class="datos">
+
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quis labore fugit illum molestias
+                provident
+                explicabo dignissimos voluptates tempore. Explicabo numquam nam commodi provident error eum earum
+                sapiente
+                dolores ipsam?
+            </div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quis labore fugit illum molestias
+                provident
+                explicabo dignissimos voluptates tempore. Explicabo numquam nam commodi provident error eum earum
+                sapiente
+                dolores ipsam?
+            </div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quis labore fugit illum molestias
+                provident
+                explicabo dignissimos voluptates tempore. Explicabo numquam nam commodi provident error eum earum
+                sapiente
+                dolores ipsam?
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('#btn-menu').addEventListener('click', () => {
+            document.querySelector('.desplegado').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
