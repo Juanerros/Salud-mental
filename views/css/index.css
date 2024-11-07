@@ -1,0 +1,16 @@
+.entrar {
+    text-align: center;
+    animation: entrar 3s forwards;
+}
+
+.entrar img {
+    margin: 20px 0;
+    width: 300px;
+}
+
+
+@keyframes entrar {
+    0% {
+        transform: translateX(-800px);
+    }
+}

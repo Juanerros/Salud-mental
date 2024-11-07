@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Contacto</title>
 
-    <link rel="stylesheet" href="views/css/style.css">
-    <link rel="stylesheet" href="views/css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-material-ui@4/material-ui.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">
-            <img src="views/imgs/logo.png" alt="logo" title="Inicio">
+        <a href="../../index.html" class="logo" title="Inicio">
+            <img src="../imgs/logo.png" alt="logo">
             <h2 class="titulo">Salud Mental</h2>
         </a>
 
@@ -31,11 +34,11 @@
 
         <div>
             <nav class="menu">
-                <a href="index.html">Inicio</a>
+                <a href="../../index.html">Inicio</a>
                 <a href="#">Información</a>
-                <a href="views/pages/galeria.html">Ayudas</a>
+                <a href="../pages/galeria.html">Ayudas</a>
                 <a href="#">Sobre nosotros</a>
-                <a href="views/pages/contacto.html">Contactos</a>
+                <a href="#">Contactos</a>
             </nav>
         </div>
 
@@ -44,30 +47,18 @@
     <nav id="menu" class="menu">
         <a href="index.html">Inicio</a>
         <a href="#">Información</a>
-        <a href="views/pages/galeria.html">Ayudas</a>
+        <a href="../pages/galeria.html">Ayudas</a>
         <a href="#">Sobre nosotros</a>
-        <a href="views/pages/contacto.html">Contactos</a>
+        <a href="#">Contactos</a>
     </nav>
 
     <main>
-
-        <section class="entrar">
-            <h2>La importancia de la salud mental</h2>
-            <img src="views/imgs/gato.jpeg" alt="imagen">
-        </section>
-
-        <p class="dato">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, reiciendis? Eaque nisi doloremque
-            accusantium consequuntur amet itaque! Amet nam repellat veniam rerum, dicta eaque a reprehenderit enim,
-            voluptates iste culpa!
-        </p>
-        <p class="parrafo">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veritatis, nulla fugit saepe nam quidem
-            animi! Ipsa doloremque odio incidunt reiciendis eaque explicabo quos ea nihil et quibusdam. Nobis, alias.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam numquam, sapiente quod ullam eveniet debitis
-            illum sunt quis nisi laudantium consequuntur? Veritatis tempore labore molestiae animi non dicta quaerat
-            consequatur!
-        </p>
+        <h3 class="subtitulo">Danos tu <span>opinion</span></h3>
+        <form onsubmit="alerta()">
+            <input type="text" placeholder="Cuentanos que podriamos mejorar" required>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="submit" value="Enviar" class="btn">
+        </form>
     </main>
 
     <footer>
@@ -95,9 +86,15 @@
     </footer>
 
     <script>
-        document.querySelector('#btn-menu').addEventListener('click', () => {
-            document.querySelector('.desplegado').classList.toggle('show');
-        });
+        function alerta() {
+            event.preventDefault();
+            Swal.fire({
+                title: "Se envio el mensaje",
+                icon: "success",
+                width: "20em"
+            });
+        }
+
     </script>
 
 </body>
