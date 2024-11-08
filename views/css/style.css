@@ -8,6 +8,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #F4F4F6;
 }
 
 header {
@@ -92,7 +93,51 @@ footer {
     font-size: 13px;
     width: 25%;
     color: #669BBC;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
+
+.datos div a{ 
+    display: flex;
+    gap: 3px;
+    text-decoration: none;
+    color: #669BBC;
+    width: fit-content;
+}
+
+.navegador a:hover {
+    border-bottom: 2px solid #669BBC;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    transition: .5 ease;
+}
+
+.redes a:hover {
+    filter: drop-shadow(0 0 20px whitesmoke);
+}
+
+.redes a img {
+    max-height: 20px;
+}
+
+.redes a .ig {
+    max-height: 26px;
+}
+
+.redes a .face {
+    margin-left: 3px;
+}
+
+.redes a .x {
+    margin-top: 2px;
+    margin-left: 3px;
+    max-height: 18px;
+}
+
 
 
 #btn-menu,
@@ -163,11 +208,12 @@ footer {
     .datos {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .datos div {
         width: 100%;
-        padding: 30px;
+        padding: 2  0px;
     }
 
 }
