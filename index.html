@@ -52,7 +52,7 @@
 
         <section class="entrar">
             <h2>La importancia de la salud mental</h2>
-            <img src="views/imgs/gato.jpeg" alt="imagen">
+            <img src="views/imgs/salud.jpeg" alt="imagen">
         </section>
         <p class="dato">
             La importancia de la salud mental en Argentina es innegable, ya que impacta directamente en la calidad de
@@ -73,7 +73,75 @@
             plenamente en la vida de sus comunidades, lo que a su vez fortalece el tejido social.
         </p>
 
+        <h2 class="entrar">LEY NACIONAL de la salud mental(26.657)</h2>
+        <p class="parrafo">
+            La promulgación de la Ley Nacional de Salud Mental N° 26.657 en 2010 marcó un hito significativo en la
+            atención de la salud mental en Argentina. Esta legislación se fundamenta en los
+            principios de derechos humanos, promoviendo un enfoque comunitario y la integración social de las personas
+            con trastornos mentales. Al prohibir la creación de hospitales monovalentes y
+            fomentar la atención en hospitales generales, la ley busca garantizar que el tratamiento se realice en
+            entornos menos estigmatizantes y más accesibles. La importancia de este marco legal
+            radica en su contribución a la deshumanización de la atención psiquiátrica tradicional y en la promoción de
+            una sociedad más inclusiva.
+        </p>
+        <h2 class="entrar">PROBLEMATICA</h2>
+        <p class="parrafo">La disparidad en el acceso a servicios de salud mental es una problemática significativa en
+            Argentina. Las áreas urbanas, como Buenos Aires, Córdoba y Rosario, cuentan con
+            una mayor concentración de profesionales y centros de atención, mientras que las zonas rurales y menos
+            pobladas enfrentan una falta de recursos y servicios. Esta desigualdad afecta especialmente
+            a las personas de bajos recursos, quienes dependen del sistema público y a menudo enfrentan largas esperas y
+            tratamientos insuficientes. La importancia de abordar esta brecha radica en la necesidad
+            de garantizar que todas las personas, independientemente de su ubicación geográfica o condición
+            socioeconómica, tengan acceso a una atención adecuada y oportuna.</p>
+        <h2 class="entrar">ESTIGMATIZACION</h2>
+        <p class="parrafo">El estigma social asociado a los trastornos mentales continúa siendo un obstáculo importante
+            en Argentina. A pesar de las campañas de concientización, muchas personas aún evitan buscar
+            ayuda por temor a ser etiquetadas negativamente o discriminadas. Esta barrera cultural se ve exacerbada por
+            una percepción tradicional que valora la fortaleza emocional, haciendo que la búsqueda de apoyo
+            psicológico sea vista como una debilidad. La importancia de combatir el estigma reside en fomentar una
+            cultura de apertura y apoyo, donde la salud mental sea tratada con la misma seriedad y respeto que la salud
+            física.</p>
+        <h2 class="entrar">PANDEMIA</h2>
+        <p class="parrafo">La pandemia de COVID-19 ha tenido un impacto profundo en la salud mental de la población
+            argentina. El confinamiento, la incertidumbre económica y la pérdida de seres queridos han incrementado
+            significativamente los niveles de ansiedad, depresión y estrés postraumático. Este aumento en la demanda de
+            servicios psicológicos ha revelado las limitaciones del sistema de salud mental, subrayando la importancia
+            de fortalecer la infraestructura y los recursos disponibles para hacer frente a crisis futuras. Además,
+            resalta la necesidad de implementar estrategias de prevención y apoyo psicológico a gran escala.
+        </p>
+        <h2 class="entrar">CONCLUSION</h2>
+        <p class="parrafo">La salud mental en Argentina es un tema de vital importancia que afecta a individuos,
+            familias y la sociedad en su conjunto. A través de un marco legal adecuado, una asignación de recursos
+            justa,
+            la reducción de barreras culturales y el fortalecimiento de los servicios disponibles, es posible mejorar
+            significativamente el bienestar mental de la población. Reconocer y abordar la importancia de la salud
+            mental
+            es un paso crucial hacia una sociedad más equitativa y saludable.</p>
+
     </main>
+
+    <div class="btn-up">
+        <img src="views/imgs/flecha-arriba.png" alt="Subir">
+    </div>
+
+
+    <script>
+        window.onscroll = function btnUp() {
+            console.log(document.documentElement.scrollTop);
+            if (document.documentElement.scrollTop > 200) {
+                document.querySelector('.btn-up').classList.add('show');
+            } else {
+                document.querySelector('.btn-up').classList.remove('show');
+            }
+        }
+
+        document.querySelector('.btn-up').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
     <footer>
         <div class="datos">
@@ -103,9 +171,9 @@
             <div class="navegador">
                 <h3>Navegador:</h3>
                 <a href="#">Inicio</a>
-                <a href="#">Información</a>
+                <a href="views/pages/informacion.html">Información</a>
                 <a href="views/pages/galeria.html">Ayudas</a>
-                <a href=".">Sobre nosotros</a>
+                <a href="views/pages/sobreNosotros.html">Sobre nosotros</a>
                 <a href="views/pages/contacto.html">Contactos</a>
             </div>
         </div>

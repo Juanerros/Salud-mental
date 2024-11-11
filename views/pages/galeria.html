@@ -53,7 +53,7 @@
         <div class="galeria">
             <!-- Hospital Bonaparte -->
             <section class="hospital">
-                <img src="C:\Users\estudiante\Desktop\proyecto\Salud-mental\views\imgs\bonaparte.jpg" alt="Hospital Bonaparte">
+                <img src="../imgs/bonaparte.jpg" alt="Hospital Bonaparte">
                 <div class="hospital-info">
                     <h3>Hospital Nacional en Red “Lic. Laura Bonaparte”</h3>
                     <p><strong>Ubicación:</strong> Combate de los Pozos 2133, CABA (Ciudad Autónoma de Buenos Aires).</p>
@@ -66,7 +66,7 @@
     
             <!-- Hospital Universitario Austral -->
             <section class="hospital">
-                <img src="../imgs/gato.jpeg" alt="Hospital Universitario Austral">
+                <img src="../imgs/austral.jpg" alt="Hospital Universitario Austral">
                 <div class="hospital-info">
                     <h3>Hospital Universitario Austral</h3>
                     <p><strong>Ubicación:</strong> Pilar, Buenos Aires</p>
@@ -78,7 +78,7 @@
     
             <!-- Hospital Borda -->
             <section class="hospital">
-                <img src="" alt="Hospital Borda">
+                <img src="../imgs/borda.jpg" alt="Hospital Borda">
                 <div class="hospital-info">
                     <h3>Hospital Borda (Hospital Interdisciplinario Psicoasistencial)</h3>
                     <p><strong>Ubicación:</strong> Av. Ramón Carrillo 375, Ciudad Autónoma de Buenos Aires</p>
@@ -90,7 +90,7 @@
     
             <!-- Hospital Moyano -->
             <section class="hospital">
-                <img src="" alt="Hospital Moyano">
+                <img src="../imgs/moyano.jpg" alt="Hospital Moyano">
                 <div class="hospital-info">
                     <h3>Hospital Moyano</h3>
                     <p><strong>Ubicación:</strong> Dr. Enrique Finochietto 850, Ciudad Autónoma de Buenos Aires</p>
@@ -102,7 +102,7 @@
     
             <!-- Centro de Salud Mental Ameghino -->
             <section class="hospital">
-                <img src="" alt="Centro de Salud Mental Ameghino">
+                <img src="../imgs/ameghino.jpg" alt="Centro de Salud Mental Ameghino">
                 <div class="hospital-info">
                     <h3>Centro de Salud Mental Ameghino</h3>
                     <p><strong>Ubicación:</strong> Av. Córdoba 3120, Ciudad Autónoma de Buenos Aires</p>
@@ -114,7 +114,7 @@
     
             <!-- Centro de Salud Mental N°1 “Dr. Hugo Rosarios” -->
             <section class="hospital">
-                <img src="" alt="Centro de Salud Mental Dr. Hugo Rosarios">
+                <img src="../imgs/hugo.jpg" alt="Centro de Salud Mental Dr. Hugo Rosarios">
                 <div class="hospital-info">
                     <h3>Centro de Salud Mental N°1 “Dr. Hugo Rosarios”</h3>
                     <p><strong>Ubicación:</strong> Av. Belgrano 3075, Ciudad Autónoma de Buenos Aires</p>
@@ -126,7 +126,7 @@
     
             <!-- Hospital Provincial de Salud Mental - Elizalde -->
             <section class="hospital">
-                <img src="" alt="Hospital Elizalde">
+                <img src="../imgs/elizalde.jpg" alt="Hospital Elizalde">
                 <div class="hospital-info">
                     <h3>Hospital Provincial de Salud Mental - Elizalde</h3>
                     <p><strong>Ubicación:</strong> Santa Fe, Provincia de Santa Fe</p>
@@ -138,7 +138,7 @@
     
             <!-- Unidad de Salud Mental, Hospital de Niños Ricardo Gutiérrez -->
             <section class="hospital">
-                <img src="" alt="Hospital de Niños Ricardo Gutiérrez">
+                <img src="../imgs/unidad gutiterrez.jpg" alt="Hospital de Niños Ricardo Gutiérrez">
                 <div class="hospital-info">
                     <h3>Unidad de Salud Mental, Hospital de Niños Ricardo Gutiérrez</h3>
                     <p><strong>Ubicación:</strong> Buenos Aires, Ciudad Autónoma de Buenos Aires, 3er piso, Pabellón A</p>
@@ -150,7 +150,7 @@
     
             <!-- Centro de Salud Mental Dr. Enrique Barros -->
             <section class="hospital">
-                <img src="" alt="Centro de Salud Mental Dr. Enrique Barros">
+                <img src="../imgs/enrique barrios.jpg" alt="Centro de Salud Mental Dr. Enrique Barros">
                 <div class="hospital-info">
                     <h3>Centro de Salud Mental Dr. Enrique Barros</h3>
                     <p><strong>Ubicación:</strong> Provincia de Córdoba</p>
@@ -160,7 +160,7 @@
     
             <!-- Instituto de Neurología Cognitiva (INECO) -->
             <section class="hospital">
-                <img src="" alt="Instituto de Neurología Cognitiva (INECO)">
+                <img src="../imgs/ineco.jpg" alt="Instituto de Neurología Cognitiva (INECO)">
                 <div class="hospital-info">
                     <h3>Instituto de Neurología Cognitiva (INECO)</h3>
                     <p><strong>Ubicación:</strong> Ciudad Autónoma de Buenos Aires</p>
@@ -170,6 +170,28 @@
         </div>
     </main>
     
+    <div class="btn-up">
+        <img src="../imgs/flecha-arriba.png" alt="Subir">
+    </div>
+
+
+    <script>
+        window.onscroll = function btnUp() {
+            console.log(document.documentElement.scrollTop);
+            if (document.documentElement.scrollTop > 200) {
+                document.querySelector('.btn-up').classList.add('show');
+            } else {
+                document.querySelector('.btn-up').classList.remove('show');
+            }
+        }
+
+        document.querySelector('.btn-up').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
     <footer>
         <div class="datos">

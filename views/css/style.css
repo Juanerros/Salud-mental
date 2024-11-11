@@ -377,3 +377,20 @@ span:hover {
     background-color: #f9e52f;
     cursor: pointer;
 }
+
+.btn-up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-up img {
+    height: 50px;
+}
+
+.show {
+    display: block;
+}

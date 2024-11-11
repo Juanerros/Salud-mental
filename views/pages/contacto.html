@@ -52,6 +52,29 @@
         <a href="contacto.html">Contactos</a>
     </nav>
 
+    <div class="btn-up">
+        <img src="../imgs/flecha-arriba.png" alt="Subir">
+    </div>
+
+
+    <script>
+        window.onscroll = function btnUp() {
+            console.log(document.documentElement.scrollTop);
+            if (document.documentElement.scrollTop > 200) {
+                document.querySelector('.btn-up').classList.add('show');
+            } else {
+                document.querySelector('.btn-up').classList.remove('show');
+            }
+        }
+
+        document.querySelector('.btn-up').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
     <section class="formulario">
         <h3 class="subtitulo">Danos tu <span>opinión</span></h3>
     
