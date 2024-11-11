@@ -53,3 +53,59 @@ input::placeholder {
     color: #780000;
 }
 
+.formulario {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9ce0e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.formulario h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #457B9D;
+}
+
+.formulario .subtitulo span {
+    color: #FF6F61;
+    cursor: default;
+}
+
+.formulario .form-label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #ffffff;
+    display: block;
+}
+
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #66a6ce;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2a5c74;
+}
+
+.formulario input[type="submit"]:active {
+    background-color: #1f4e5d;
+}
