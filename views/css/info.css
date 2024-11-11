@@ -9,6 +9,25 @@ main p {
     width: 70%;
 }
 
+main h2 {
+    margin-top: 30px;
+}
+
 li  {
     margin: 20px 0;
+}
+
+ul {
+    margin-left: 25%;
+}
+
+@media (max-width:400px) {
+
+    main {
+        padding: 10px;
+    }
+
+    ul {
+        width: 90%;
+    }
 }

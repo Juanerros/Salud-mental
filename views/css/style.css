@@ -159,11 +159,12 @@ footer {
     .desplegado {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        justify-content: center;
+        padding: 15px;
         background-color: #77A6F7;
         width: 120px;
         position: absolute;
-        top: 80px;
+        top: 90px;
         right: 10px;
         z-index: 1;
     }
@@ -172,7 +173,6 @@ footer {
         color: #FFFFFF;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
         padding: 10px;
     }
 
@@ -221,8 +221,7 @@ footer {
 }
 
 .formulario {
-    max-width: 600px;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #9ce0e9;
     border-radius: 10px;

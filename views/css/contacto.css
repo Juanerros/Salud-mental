@@ -22,13 +22,10 @@ form input {
     padding: 10px;
     min-width: 250px;
     color: #669BBC;
-
 }
 
 input::placeholder { 
     color: #0c5f8b;
-
-
 }
 
 .btn {
