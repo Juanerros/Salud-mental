@@ -35,10 +35,10 @@
         <div>
             <nav class="menu">
                 <a href="../../index.html">Inicio</a>
-                <a href="#">Información</a>
-                <a href="../pages/galeria.html">Ayudas</a>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Contactos</a>
+                <a href="informacion.html">Información</a>
+                <a href="galeria.html">Ayudas</a>
+                <a href="sobreNosotros.html">Sobre nosotros</a>
+                <a href="contacto.html">Contactos</a>
             </nav>
         </div>
 
@@ -46,20 +46,27 @@
 
     <nav id="menu" class="menu">
         <a href="../../index.html">Inicio</a>
-        <a href="#">Información</a>
-        <a href="../pages/galeria.html">Ayudas</a>
-        <a href="../pages/sobreNosotros.html">Sobre nosotros</a>
-        <a href="#">Contactos</a>
+        <a href="informacion.html">Información</a>
+        <a href="galeria.html">Ayudas</a>
+        <a href="sobreNosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contactos</a>
     </nav>
 
-    <main>
-        <h3 class="subtitulo">Danos tu <span>opinion</span></h3>
-        <form onsubmit="alerta()">
-            <input type="text" placeholder="Cuentanos que podriamos mejorar" required>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="submit" value="Enviar" class="btn">
+    <section class="formulario">
+        <h3 class="subtitulo">Danos tu <span>opinión</span></h3>
+    
+        <!-- Formulario de contacto -->
+        <form onsubmit="alerta(); return false;" class="form-contacto">
+            <label for="feedback" class="form-label">¿Qué podríamos mejorar?</label>
+            <input type="text" id="feedback" placeholder="Cuéntanos qué podríamos mejorar" required>
+    
+            <label for="nombre" class="form-label">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+    
+            <input type="submit" value="Enviar" class="btn-enviar">
         </form>
-    </main>
+    </section>
+    
 
     <footer>
         <div class="datos">
@@ -88,9 +95,9 @@
             <div class="navegador">
                 <h3>Navegador:</h3>
                 <a href="../../index.html">Inicio</a>
-                <a href="#">Información</a>
-                <a href="../pages/galeria.html">Ayudas</a>
-                <a href="../pages/sobreNosotros.html">Sobre nosotros</a>
+                <a href="informacion.html">Información</a>
+                <a href="galeria.html">Ayudas</a>
+                <a href="sobreNosotros.html">Sobre nosotros</a>
                 <a href="#">Contactos</a>
             </div>
         </div>

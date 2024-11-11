@@ -1,14 +1,17 @@
-/* Estilos generales*/
+/* Estilos generales */
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #F4F4F6;
+    background-color: #FAF7F0;
+    line-height: 1.6;
+    color: #4D4D4D;
 }
 
 header {
@@ -16,22 +19,23 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 15vh;
-    background-color: #780000;
-    padding: 10px;
+    background-color: #77A6F7;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header a {
-    color: whitesmoke;
+    color: #FFFFFF;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header a img {
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 header a img:hover {
-    filter: drop-shadow(5px 5px 10px whitesmoke);
+    filter: drop-shadow(5px 5px 10px #FFFFFF);
 }
 
 .logo {
@@ -47,98 +51,99 @@ header a img:hover {
 
 nav a {
     margin-right: 10px;
+    padding: 8px 2px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    border-bottom: 2px solid white;
+    background-color: #AAC8A7; /* Suave cambio de color */
+    color: #4D4D4D;
 }
 
 main {
     margin: 20px 0px;
+    padding: 0 20px;
     min-height: 100vh;
 }
 
 .dato {
-    border-left: 5px #5D89BF solid;
-    padding: 0 20px;
-    color: rgb(73, 73, 73);
+    border-left: 5px solid #AAC8A7;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #4D4D4D;
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
     text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .parrafo {
-    padding: 40px 10px;
-    color: rgb(73, 73, 73);
+    padding: 40px 20px;
+    background-color: #FFFFFF;
     width: 60%;
-    margin: auto;
+    margin: 20px auto;
     text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 footer {
-    padding: 30px;
+    padding: 30px 20px;
     margin-top: auto;
-    min-height: 25vh;
-    background-color: #003049;
+    background-color: #497174;
+    color: #FAF7F0;
+    font-size: 14px;
+    text-align: center;
 }
 
 .datos {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 30px;
-    border-bottom: 2px #669BBC solid;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #89B3B9;
+    gap: 20px;
 }
 
 .datos div {
-    font-size: 13px;
+    font-size: 14px;
     width: 25%;
-    color: #669BBC;
+    color: #FAF7F0;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.datos div a{ 
+.datos div a { 
     display: flex;
-    gap: 3px;
+    gap: 5px;
     text-decoration: none;
-    color: #669BBC;
-    width: fit-content;
+    color: #89B3B9;
+    transition: color 0.3s ease;
+}
+
+.datos div a:hover {
+    color: #AAC8A7;
 }
 
 .navegador a:hover {
-    border-bottom: 2px solid #669BBC;
+    border-bottom: 2px solid #89B3B9;
 }
 
 .redes a {
     display: flex;
     align-items: center;
-    transition: .5 ease;
+    transition: 0.5s ease;
 }
 
 .redes a:hover {
-    filter: drop-shadow(0 0 20px whitesmoke);
+    filter: drop-shadow(0 0 20px #FFFFFF);
 }
 
 .redes a img {
     max-height: 20px;
 }
-
-.redes a .ig {
-    max-height: 26px;
-}
-
-.redes a .face {
-    margin-left: 3px;
-}
-
-.redes a .x {
-    margin-top: 2px;
-    margin-left: 3px;
-    max-height: 18px;
-}
-
-
 
 #btn-menu,
 #menu,
@@ -147,7 +152,6 @@ footer {
 }
 
 @media (max-width:400px) {
-
     .menu {
         display: none;
     }
@@ -155,31 +159,27 @@ footer {
     .desplegado {
         display: flex;
         flex-direction: column;
-        padding-left: 10px;
-        margin-left: 10px;
-        background-color: #780000;
-        width: 100px;
-        position: absolute;
-        top: 100px;
-        right: 10px;
         padding: 10px;
+        background-color: #77A6F7;
+        width: 120px;
+        position: absolute;
+        top: 80px;
+        right: 10px;
         z-index: 1;
     }
 
     .desplegado a {
-        color: whitesmoke;
+        color: #FFFFFF;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         padding: 10px;
-
     }
-
 
     #btn-menu {
         height: 26px;
         width: 26px;
-        border: 2px solid white;
+        border: 2px solid #FFFFFF;
         background-color: transparent;
         border-radius: 5px;
         display: flex;
@@ -190,19 +190,17 @@ footer {
     }
 
     #btn-menu span {
-        background-color: white;
+        background-color: #FFFFFF;
         height: 2px;
         width: 14px;
         border-radius: 5px;
     }
-
 }
 
 @media (max-width:600px) {
     .entrar img {
         margin: 20px 0;
         width: 100%;
-        
     }
 
     .datos {
@@ -213,7 +211,169 @@ footer {
 
     .datos div {
         width: 100%;
-        padding: 2  0px;
+        padding: 20px 0;
     }
 
+    .parrafo {
+        width: 90%;
+    }
+
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #9ce0e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.formulario h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #457B9D;
+}
+
+.formulario .subtitulo span {
+    color: #FF6F61;
+    cursor: default;
+}
+
+.formulario .form-label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #ffffff;
+    display: block;
+}
+
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #66a6ce;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2a5c74;
+}
+
+.formulario input[type="submit"]:active {
+    background-color: #1f4e5d;
+}
+/* Estilo General de la Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada hospital */
+.hospital {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hospital:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del hospital */
+.hospital img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Información de cada hospital */
+.hospital-info {
+    padding: 20px;
+    color: #333;
+}
+
+.hospital-info h3 {
+    font-size: 1.5em;
+    color: #457B9D;
+    margin-bottom: 10px;
+}
+
+.hospital-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.hospital-info p strong {
+    color: #FF6F61;
+}
+.presentation-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.presentation-section, .project-section {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.azul {
+    color: #007BFF;
+}
+
+.rojo {
+    color: #D9534F;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+}
+
+span {
+    background-color: #ffeb3b;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+span:hover {
+    background-color: #f9e52f;
+    cursor: pointer;
 }
