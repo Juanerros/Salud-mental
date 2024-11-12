@@ -34,6 +34,9 @@
 
     <main>
         <!-- Sección principal -->
+
+        <h2 class="subtitulo">Información</h2>
+
         <section class="entrar">
             <h2>¿Que nos garantiza la ley 26.657</h2>
         </section>
@@ -62,8 +65,9 @@
             o de internación involuntaria. Los servicios de emergencia, como el SAME en Buenos Aires,
             están disponibles las 24 horas y pueden ser llamados en caso de una crisis psiquiátrica urgente</p>
         <h2>¿Que tipos de trastornos hay?</h2>
-        <ul>
-            <li><strong>Trastornos de Ansiedad</strong>
+        <div class="ul">
+            <li>
+                <strong>Trastornos de Ansiedad</strong>
                 <p>Incluyen subtipos como el trastorno de ansiedad generalizada, donde se experimenta preocupación
                     excesiva sin un motivo específico; el trastorno de pánico,
                     caracterizado por ataques de pánico recurrentes; las fobias específicas, que son miedos intensos a
@@ -149,7 +153,7 @@
                     trastorno explosivo intermitente,
                     donde se presentan episodios de ira y agresividad desproporcionados.</p>
             </li>
-        </ul>
+        </div>
 
         <h2>¿Hay cura para estos trastornos?</h2>
         <p>La mayoría de los trastornos mentales no tienen una cura definitiva, pero existen tratamientos que permiten
@@ -179,7 +183,7 @@
 
 
     <script>
-        window.onscroll = function btnUp() {
+        window.onscroll = () => {
             if (document.documentElement.scrollTop > 200) {
                 document.querySelector('.btn-up').classList.add('show');
             } else {
