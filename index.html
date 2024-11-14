@@ -12,22 +12,17 @@
 
 <body>
     <header>
-        <a href="#" class="logo">
-            <img src="views/imgs/logo.png" alt="logo" title="Inicio">
-            <h2 class="titulo">Salud Mental</h2>
-        </a>
-
         <button id="btn-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        
+        <a href="#" class="logo">
+            <img src="views/imgs/logo.png" alt="logo" title="Inicio">
+            <h2 class="titulo">Salud Mental</h2>
+        </a>
 
-        <script>
-            document.querySelector('#btn-menu').addEventListener('click', () =>
-                document.querySelector('.menu').classList.toggle('desplegado')
-            );
-        </script>
         <div>
             <nav class="menu">
                 <a href="#">Inicio</a>
@@ -47,6 +42,11 @@
         <a href="views/pages/sobreNosotros.html">Sobre nosotros</a>
         <a href="views/pages/contacto.html">Contactos</a>
     </nav>
+    <script>
+        document.querySelector('#btn-menu').addEventListener('click', () =>
+            document.querySelector('.menu').classList.toggle('desplegado')
+        );
+    </script>
 
     <main>
 

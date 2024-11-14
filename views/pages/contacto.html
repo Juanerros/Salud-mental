@@ -15,22 +15,15 @@
 
 <body>
     <header>
-        <a href="../../index.html" class="logo" title="Inicio">
-            <img src="../imgs/logo.png" alt="logo">
-            <h2 class="titulo">Salud Mental</h2>
-        </a>
-
         <button id="btn-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-
-        <script>
-            document.querySelector('#btn-menu').addEventListener('click', () =>
-                document.querySelector('.menu').classList.toggle('desplegado')
-            );
-        </script>
+        <a href="../../index.html" class="logo" title="Inicio">
+            <img src="../imgs/logo.png" alt="logo">
+            <h2 class="titulo">Salud Mental</h2>
+        </a>
 
         <div>
             <nav class="menu">
@@ -45,12 +38,17 @@
     </header>
 
     <nav id="menu" class="menu">
-        <a href="../../index.html">Inicio</a>
-        <a href="informacion.html">Información</a>
-        <a href="galeria.html">Ayudas</a>
-        <a href="sobreNosotros.html">Sobre nosotros</a>
-        <a href="contacto.html">Contactos</a>
+        <a href="#">Inicio</a>
+        <a href="views/pages/informacion.html">Información</a>
+        <a href="views/pages/galeria.html">Ayudas</a>
+        <a href="views/pages/sobreNosotros.html">Sobre nosotros</a>
+        <a href="views/pages/contacto.html">Contactos</a>
     </nav>
+    <script>
+        document.querySelector('#btn-menu').addEventListener('click', () =>
+            document.querySelector('.menu').classList.toggle('desplegado')
+        );
+    </script>
 
     <div class="btn-up">
         <img src="../imgs/flecha-arriba.png" alt="Subir">

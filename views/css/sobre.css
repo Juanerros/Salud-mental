@@ -67,7 +67,7 @@ section {
 
 
 @media (max-width:600px) {
-    section {
-        width: auto;
+    .cuan, .neu {
+        flex-direction: column;
     }
 }

@@ -12,16 +12,18 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <a href="../../index.html" class="logo">
-            <img src="../imgs/logo.png" alt="Logo de la página" title="Inicio">
-            <h2 class="titulo">Salud Mental</h2>
-        </a>
-
         <button id="btn-menu" aria-label="Abrir menú">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        
+        <a href="../../index.html" class="logo">
+            <img src="../imgs/logo.png" alt="Logo de la página" title="Inicio">
+            <h2 class="titulo">Salud Mental</h2>
+        </a>
+
+        
 
         <nav class="menu">
             <a href="../../index.html">Inicio</a>
@@ -31,6 +33,19 @@
             <a href="contacto.html">Contactos</a>
         </nav>
     </header>
+
+    <nav id="menu" class="menu">
+        <a href="#">Inicio</a>
+        <a href="views/pages/informacion.html">Información</a>
+        <a href="views/pages/galeria.html">Ayudas</a>
+        <a href="views/pages/sobreNosotros.html">Sobre nosotros</a>
+        <a href="views/pages/contacto.html">Contactos</a>
+    </nav>
+    <script>
+        document.querySelector('#btn-menu').addEventListener('click', () =>
+            document.querySelector('.menu').classList.toggle('desplegado')
+        );
+    </script>
 
     <main>
         <!-- Sección principal -->
@@ -239,13 +254,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Mostrar y ocultar el menú móvil
-        document.querySelector('#btn-menu').addEventListener('click', () => {
-            document.querySelector('.menu').classList.toggle('desplegado');
-        });
-    </script>
 </body>
 
 </html>

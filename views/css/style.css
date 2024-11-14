@@ -149,40 +149,49 @@ footer {
 
 #btn-menu,
 #menu,
-.desplegado {
+.desplegado
+{
     display: none;
 }
 
 @media (max-width:600px) {
+    .logo {
+        margin: 0;
+    }
+
     .menu {
-        display: none;
+        display: flex;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        background-color: #77A6F7;
+        position: absolute;
+        height: 90vh;
+        top: 80px;
+        left: 0;
+        z-index: 1;
+        transition: all 1s ease;
+        gap: 20px;
+        border-radius: 0 0 10px 0;
     }
 
     .desplegado {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px;
-        background-color: #77A6F7;
-        width: 120px;
-        position: absolute;
-        top: 90px;
-        right: 10px;
-        z-index: 1;
+        transform: translateX(0%);
     }
 
-    .desplegado a {
+    .menu a {
         color: #FFFFFF;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 10px;
+        padding: 0 20px;
+        border-right: 4px solid whitesmoke;
+        border-radius: 0px;
+        font-size: 18px;
     }
 
     #btn-menu {
-        position: absolute;
-        right: 10px;
-        height: 26px;
-        width: 26px;
+        height: 30px;
+        width: 30px;
         border: 2px solid #FFFFFF;
         background-color: transparent;
         border-radius: 5px;
