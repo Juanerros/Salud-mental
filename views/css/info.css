@@ -13,13 +13,13 @@ main h2 {
     margin-top: 30px;
 }
 
-.ul {
-    margin-left: 20%;
-}
 
 li {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 5%;
+    background-color: aliceblue;
+    padding: 1%;
+    border: 1px solid;
 }
 
 .subtitulo {

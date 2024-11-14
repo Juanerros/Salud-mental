@@ -50,31 +50,62 @@
     </nav>
     <main class="presentation-container">
         <!-- Sección: Somos -->
-        <section class="presentation-section">
-            <h3 class="title">
-                <span class="highlight azul">Somos</span> dos estudiantes de la 
-                <span class="highlight rojo">E.E.S.T N°1</span>
-            </h3>
-            <p class="description">
-                Somos dos estudiantes de la E.E.S.T. N°1 comprometidos con la salud mental y con el deseo de generar un espacio donde podamos compartir información
-                útil y brindar apoyo a quienes lo necesiten. Creemos que la salud mental es fundamental para el bienestar de todas las personas, y nuestro objetivo es
-                hacer que esta plataforma sea un recurso accesible y útil para quienes busquen comprender mejor estos temas o necesiten orientación.
+        <div>
+            <section>
+                <h3 class="title">
+                    <span class="highlight azul">Somos</span> dos estudiantes de la
+                    <span class="highlight rojo">E.E.S.T N°1</span>
+                </h3>
+                <p>
+                    Somos dos estudiantes de la E.E.S.T. N°1 comprometidos con la salud mental y con el deseo de generar
+                    un
+                    espacio donde podamos compartir información
+                    útil y brindar apoyo a quienes lo necesiten. Creemos que la salud mental es fundamental para el
+                    bienestar de todas las personas, y nuestro objetivo es
+                    hacer que esta plataforma sea un recurso accesible y útil para quienes busquen comprender mejor
+                    estos
+                    temas o necesiten orientación.
+                </p>
+            </section>
+
+            <!-- Sección: Proyecto -->
+            <section>
+                <p>
+                    Este es un <span class="highlight azul">proyecto</span> para
+                    <span class="highlight rojo">diseño web.</span> El cual está
+                    centrado en el <span class="highlight rojo">diseño</span> y la
+                    <span class="highlight azul">conscientización</span> del sitio web. Este sitio forma parte de un
+                    proyecto de diseño web en el que hemos trabajado para crear una página moderna y fácil de usar,
+                    que también sea totalmente adaptable a cualquier dispositivo. Nos esforzamos por construir un
+                    espacio
+                    visualmente atractivo,
+                    intuitivo y funcional, pensando siempre en los usuarios. A través de esta página, queremos
+                    contribuir a
+                    la visibilidad de la salud mental
+                    y ofrecer recursos que pueden marcar una diferencia.
+                </p>
+            </section>
+        </div>
+
+
+        <section class="neu">
+            <img src="../imgs/neu.jpg" alt="Neu">
+            <p>
+                Soy una persona super organizada y comprometida. Me encanta aprender nuevas cosas y crecer cada día.
+                Estoy siempre dispuesto a enfrentar nuevos desafíos y superar mis objetivos. Mi meta es salir adelante y
+                hacer realidad mis sueños, con determinación y esfuerzo.
             </p>
         </section>
-        
-        <!-- Sección: Proyecto -->
-        <section class="project-section">
-            <p class="description">
-                Este es un <span class="highlight azul">proyecto</span> para 
-                <span class="highlight rojo">diseño web.</span> El cual está
-                centrado en el <span class="highlight rojo">diseño</span> y la 
-                <span class="highlight azul">conscientización</span> del sitio web. Este sitio forma parte de un proyecto de diseño web en el que hemos trabajado para crear una página moderna y fácil de usar,
-                que también sea totalmente adaptable a cualquier dispositivo. Nos esforzamos por construir un espacio visualmente atractivo, 
-                intuitivo y funcional, pensando siempre en los usuarios. A través de esta página, queremos contribuir a la visibilidad de la salud mental
-                y ofrecer recursos que pueden marcar una diferencia.
+        <section class="cuan">
+            <img src="../imgs/juan.jpg" alt="Cuan">
+            <p>
+                Soy un estudiante adolescente, guapo y apasionado por las tecnologías backend. Tengo un conocimiento
+                sólido en Node.js y PHP, además de una gran habilidad en el manejo de bases de datos SQL y NoSQL. Con
+                cada proyecto, busco no solo mejorar mis habilidades, sino también compartir mi experiencia y aprender
+                de la comunidad tecnológica. Mi curiosidad y dedicación me destacan en este campo en crecimiento.
             </p>
         </section>
-    </main>    
+    </main>
 
     <div class="btn-up">
         <img src="../imgs/flecha-arriba.png" alt="Subir">
@@ -82,7 +113,7 @@
 
 
     <script>
-        window.onscroll = () =>  {
+        window.onscroll = () => {
             if (document.documentElement.scrollTop > 200) {
                 document.querySelector('.btn-up').classList.add('show');
             } else {
