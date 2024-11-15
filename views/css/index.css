@@ -1,16 +1,25 @@
+section {
+    text-align: center;
+}
+
+section img {
+    margin: 20px 0;
+    width: 50%
+}
+
 .entrar {
     text-align: center;
     animation: entrar 3s forwards;
 }
 
-.entrar img {
-    margin: 20px 0;
-    width: 20wv;
-}
-
-
 @keyframes entrar {
     0% {
         transform: translateX(-800px);
+    }
+}
+
+@media(max-width:920px) {
+    section img {
+        width: 100%;
     }
 }

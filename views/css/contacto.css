@@ -54,8 +54,8 @@ input::placeholder {
 }
 
 .formulario {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 30px;
     background-color: #9ce0e9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
